@@ -4,7 +4,7 @@
 // - protoc             v5.28.3
 // source: api/proto/src/metadata_parser_audio.proto
 
-package proto
+package metadataparseraudio
 
 import (
 	context "context"

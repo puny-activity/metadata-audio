@@ -1,6 +1,5 @@
 package base
 
 const (
-	CtxActionID    = "actionId"
-	CtxRequesterID = "requesterId"
+	CtxActionID = "actionId"
 )

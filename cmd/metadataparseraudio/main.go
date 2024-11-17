@@ -19,7 +19,7 @@ func main() {
 	logger := lggr.New(config.Logger)
 	logger.Debug("Logger initialized")
 
-	application := app.New(logger)
+	application := app.New(config.GetAppConfig(), logger)
 	err = application.Start()
 	if err != nil {
 		panic(werr.Wrap("failed to start application", err))
