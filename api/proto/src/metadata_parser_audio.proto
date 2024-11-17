@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package metadata;
+
+option go_package = "api/proto/gen;proto";
+
+service MetadataParser {
+  rpc Extract(ExtractRequest) returns (ExtractResponse);
+}
+
+message ExtractRequest {
+  string file_name = 1;
+  string file_path = 2;
+  string file_type = 3;
+  bytes file_chunk = 4;
+}
+
+message ExtractResponse {
+  bytes metadata = 1;
+}
